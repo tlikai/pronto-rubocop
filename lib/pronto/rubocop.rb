@@ -60,12 +60,7 @@ module Pronto
     end
 
     def level(severity)
-      case severity
-      when :refactor, :convention
-        :info
-      when :warning, :error, :fatal
-        severity
-      end
+      :warning
     end
   end
 end
